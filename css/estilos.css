@@ -78,7 +78,7 @@ header{
 
 footer{
     background: linear-gradient(to bottom, #121212, #1e1e1e);  
-    height: 300px;  
+    height: 270px;  
 }
 
 .contenedor{
@@ -194,6 +194,114 @@ th {
     font-weight: bold;
     text-transform: uppercase;
     flex-shrink: 0;
-
-
 }
+
+/* Contenedor principal */
+.container_cart {
+    margin-top: 5%; /* Ajusta el margen superior para que las cards no se escondan detrás del navbar */
+    text-align: center;
+    flex: 1;
+    padding: 5px; /* Añade padding para dar espacio en los laterales */
+    display: flex;    
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.centrar-div {
+    text-align: center;
+} 
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+#formulario {
+    width: 50%;
+    border: 1px solid;
+    margin-left: 25%;
+}
+
+  .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table .nombre {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.table .precio, .table .subtotal {
+    font-weight: bold;
+}
+
+.table .cantidad-input {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.total-row {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.btn.eliminar-pedido {
+    padding: 5px 10px;
+}
+
+.icono-trash {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+tfoot tr {
+    background-color: #e9ecef;
+}
+
+.register {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+.btnRegister{
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+

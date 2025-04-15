@@ -16,16 +16,19 @@ retornarCardHtml = (producto) => {
             </div>`
 }
 
-const activarClickEnBotones = ()=>{
-    const botonesAgregar = document.querySelectorAll('button. button-outline.button-add')
-    if(botonesAgregar !== null){
-        botonesAgregar.forEach((button)=>{
-            button.addEventListener('click', (e)=>{
-                agregarAlCarrito(e.target.id)
-            })
-        })
-    }
-}
+function activarClickEnBotones(productos) {
+    container.addEventListener("click", async (e) => {
+      if (e.target.tagName === "BUTTON" && e.target.dataset.id) {
+        const productoSeleccionado = productos.find(
+          (producto) => producto.id === parseInt(e.target.dataset.id)
+        );
+        if (productoSeleccionado) {
+          await agregarProducto(productoSeleccionado);
+          alert("Producto agregado al carrito");
+        }
+      }
+    });
+  }
 
 const cargarProductos = (array) => {
     if(array.length > 0){
